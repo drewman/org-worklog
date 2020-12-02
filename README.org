@@ -3,19 +3,19 @@
 * org-worklog
 This project is a derivative/fork of [[https://github.com/skx/org-worklog][org-worklog]].  It's meant to be a watered down version that is fully functional in a single template with minimal setup.
 
-This repository contains a single file, `template.org` which can be used to maintain a daily work-log via Emacs [[https://orgmode.org][org-mode]].
+This repository contains a single file, ~template.org~ which can be used to maintain a daily work-log via Emacs [[https://orgmode.org][org-mode]].
 
 The best view of the template is the raw view where you can see the embedded code, etc: [[https://raw.githubusercontent.com/drewman/org-worklog/master/template.org][template.org]]
 
 ** Features
 The template is pretty minimal, but still useful despite that.  There is automation in-place such that you can:
 - Jump/Create today's entry.
-  - By running `M-x today`
+  - By running ~M-x today~
 
 ** Set-up
-- Copy template.org into your org directory under a name of your choice.
+- Copy ~template.org~ into your org directory under a name of your choice.
 - Edit day template, reoccuring meetings.
-- Add your new worklog file to ~org-agenda-files~ if it isn't already
+- If you want to use with ~org-agenda~, add your new worklog file to ~org-agenda-files~ if it isn't already
 #+BEGIN_SRC emacs-lisp
 (setq org-agenda-files (list "path/to/worklog.org" "path/to/other/org/directory")
 #+END_SRC
